@@ -1,6 +1,6 @@
 {
   "name": "restify-test-fixture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple startup and teardown for tests using restify servera",
   "main": "index.js",
   "repository": {
