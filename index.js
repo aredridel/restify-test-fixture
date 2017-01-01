@@ -9,7 +9,6 @@ module.exports = function restifyFixture(fn) {return __async(function*(){
 	return {
 		done() {return __async(function*(){
 		 	yield server.closeAsync()
-			console.warn('closed');
 		}())},
 		url: server.url
 	};
