@@ -1,14 +1,15 @@
-const promisify = require('es6-promisify-all');
+const promisify = require('es6-promisify');
 const restify = require('restify');
 
 module.exports = async function restifyFixture(fn) {
 	const server = restify.createServer()
 	await fn(server);
-	promisify(server);
-	await server.listenAsync(0);
+	const listen = promisify(server.listen, server);
+	const close = promisify(server.close, server);
+	await listen(0);
 	return {
 		async done() {
-		 	await server.closeAsync()
+		 	await close();
 		},
 		url: server.url
 	};

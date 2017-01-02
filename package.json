@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/aredridel/restify-test-fixture#readme",
   "dependencies": {
-    "es6-promisify-all": "^0.1.0",
+    "es6-promisify": "^5.0.0",
     "restify": "^4.3.0"
   },
   "devDependencies": {
