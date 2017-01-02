@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/aredridel/restify-test-fixture/issues"
   },
-  "homepage": "https://github.com/aredridel/restify-test-fixture#readme",
+  "homepage": "https://npmjs.com/package/restify-test-fixture",
   "dependencies": {
     "es6-promisify": "^5.0.0",
     "restify": "^4.3.0"
